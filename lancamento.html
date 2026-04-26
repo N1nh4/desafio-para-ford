@@ -1,47 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/lancamento.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="logo-header">
-            <img id="logo-ford" src="img/logo-ford-256.png" alt="logo-ford">
-        </div>
-        <div id="menu">
-            <a href="index.html">
-                <nav>Home</nav>
-            </a>
-            <a href="lancamento.html">
-                <nav>Lançamento</nav>
-            </a>
-            <a href="contato.html">
-                <nav>Contato</nav>
-            </a>
-        </div>
+      <div class="div-logo-header">
+        <img
+          class="img-logo-ford"
+          src="img/logo-ford-256.png"
+          alt="logo-ford"
+        />
+      </div>
+      <div class="itens-nav">
+        <a href="index.html">
+          <nav>Home</nav>
+        </a>
+        <a href="lancamento.html">
+          <nav>Lançamento</nav>
+        </a>
+        <a href="contato.html">
+          <nav>Contato</nav>
+        </a>
+      </div>
+      <div class="centralizar"></div>
     </header>
 
-    <hr>
+    <!-- Separador -->
+    <hr />
 
-    <main>
-        <img id="ranger" src="img/imagem_1.jpg" alt="">
-        <p>Descrição do vídeo <a href=""> aqui</a></p>
-    </main>
+    <!-- Contéudo Principal -->
+    <main class="lancamento">
+      <!-- Vídeo -->
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/vQsryuNmsL0?si=r-MsBXm37H-NeBCr"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          Ford Ranger 2022. A picape Raça Forte do Brasil. A gente sempre esteve
+          nessa terra e vai continuar nela. Saiba mais
+          <a href="https://www.youtube.com/watch?v=vQsryuNmsL0"> aqui</a>
+        </p>
+      </div>
 
-     <footer>
-        <div id="redes-sociais">
-            <span>Redes Sociais</span>
-            <img class="redes-sociais" src="img/facebook-50.png" alt="logo-facebook">
-            <img class="redes-sociais" src="img/youtube-squared-50.png" alt="logo-youtube">
-            <img class="redes-sociais" src="img/instagram-logo-50.png" alt="logo-instagram">
+      <!-- Opções de Carros -->
+      <div id="opcoes-carros">
+        <!--Card do Carro 1-->
+        <div class="card-carros">
+          <!--Imagem do Carro-->
+          <div class="div-imagem-carro">
+            <img class="imagem-carro" src="img/XL Cabine.jpg" alt="" />
+          </div>
+
+          <!--Info do Carro-->
+          <div class="info-carro">
+            <input class="checkbox" type="checkbox" name="carro" id="item1" />
+            <div class="textos-carro">
+              <span class="texto1"
+                >KL Cabine Simples 2.2 Disel 4x4 MT Flex Work</span
+              >
+              <span class="texto2">Preço Sugerido: R$ 183.850</span>
+            </div>
+            <div class="icone-i">
+              <img src="img/info.png" alt="" />
+            </div>
+          </div>
         </div>
 
-        <span>Copyright © 2026 <a href="https://github.com/N1nh4">Alana Abreu</a> Todos os direitos reservados.</span>
+        <!--Card do Carro 2-->
+        <div class="card-carros">
+          <!--Imagem do Carro-->
+          <div class="div-imagem-carro">
+            <img class="imagem-carro" src="img/xls 2.2 diesel.jpg" alt="" />
+          </div>
 
-        <img src="img/ford-96.png" alt="">
+          <!--Info do Carro-->
+          <div class="info-carro">
+            <input class="checkbox" type="checkbox" name="carro" id="" />
+            <div class="textos-carro">
+              <span class="texto1">XLS 2.2 Disel 4x4 AT 2022</span>
+              <span class="texto2">Preço Sugerido: R$ 220.690</span>
+            </div>
+            <div class="icone-i">
+              <img src="img/info.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!--Card do Carro 3-->
+        <div class="card-carros">
+          <!--Imagem do Carro-->
+          <div class="div-imagem-carro">
+            <img class="imagem-carro" src="img/storm.jpg" alt="" />
+          </div>
+
+          <!--Info do Carro-->
+          <div class="info-carro">
+            <input class="checkbox" type="checkbox" name="carro" id="" />
+            <div class="textos-carro">
+              <span class="texto1">Storm 3.2 Disel 4x4 AT 2022</span>
+              <span class="texto2">Preço Sugerido: R$ 222.790</span>
+            </div>
+            <div class="icone-i">
+              <img src="img/info.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <button>Comparar Carros</button>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div id="div-redes-sociais">
+        <span>Redes Sociais</span>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/FordBrasil/?locale=pt_BR"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/facebook-50.png"
+            alt="logo-facebook"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/user/FordBrasil"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/youtube-squared-50.png"
+            alt="logo-youtube"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/fordbrasil/?hl=pt-br"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/instagram-logo-50.png"
+            alt="logo-instagram"
+        /></a>
+      </div>
+
+      <span
+        >Copyright © 2026
+        <a href="https://github.com/N1nh4" target="_blank">Alana Abreu</a> Todos
+        os direitos reservados.</span
+      >
+
+      <img src="img/ford-96.png" alt="" />
     </footer>
-</body>
+  </body>
 </html>

@@ -10,6 +10,11 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -57,29 +62,10 @@ hr {
 
 main {
   display: flex;
-  flex-direction: column;
   flex: 1;
   justify-content: center;
   align-items: center;
-}
-
-.div-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 100%;
-  overflow: hidden;
-}
-
-.link {
-  max-width: 75%;
-  height: auto;
-}
-
-#ranger {
-  max-width: 100%;
-  height: auto;
+  gap: 5%;
 }
 
 main > p {
@@ -125,7 +111,118 @@ footer > span > a {
   height: auto;
 }
 
+form {
+  display: flex;
+  gap: 10px;
+  width: 20vw;
+  flex-direction: column;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #1351d8;
+  border-radius: 5px;
+}
+
+select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  color: #333;
+}
+
+select:focus {
+  outline: none;
+  border: 1px solid #1351d8;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #1351d8;
+  color: white;
+  cursor: pointer;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
+
+button:hover {
+  background-color: #1b357e;
+}
+
 @media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .div-img-carro {
+    width: 45vw;
+    height: 30%;
+  }
+
+  .img-carro {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    display: flex;
+    gap: 10px;
+    width: 50vw;
+    flex-direction: column;
+  }
+
+  input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  input:focus {
+    outline: none;
+    border: 1px solid #1351d8;
+    border-radius: 5px;
+  }
+
+  select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: #333;
+  }
+
+  select:focus {
+    outline: none;
+    border: 1px solid #1351d8;
+    border-radius: 5px;
+  }
+
+  button {
+    background-color: #1351d8;
+    color: white;
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 5px 0px;
+  }
+
+  button:hover {
+    background-color: #1b357e;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -133,7 +230,7 @@ footer > span > a {
     color: white;
     justify-content: space-between;
     padding: 2%;
-    height: auto;
+    height: 15%;
   }
 
   footer > span {

@@ -1,63 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <header>
-        <div class="logo-header">
-            <img id="logo-ford" src="img/logo-ford-256.png" alt="logo-ford">
-        </div>
-        <div id="menu">
-            <a href="index.html">
-                <nav>Home</nav>
-            </a>
-            <a href="lancamento.html">
-                <nav>Lançamento</nav>
-            </a>
-            <a href="contato.html">
-                <nav>Contato</nav>
-            </a>
-        </div>
-        
+    <link rel="stylesheet" href="css/contato.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <div class="div-logo-header">
+        <img
+          class="img-logo-ford"
+          src="img/logo-ford-256.png"
+          alt="logo-ford"
+        />
+      </div>
+      <div class="itens-nav">
+        <a href="index.html">
+          <nav>Home</nav>
+        </a>
+        <a href="lancamento.html">
+          <nav>Lançamento</nav>
+        </a>
+        <a href="contato.html">
+          <nav>Contato</nav>
+        </a>
+      </div>
+      <div class="centralizar"></div>
     </header>
 
-    <hr>
+    <hr />
 
-    <main id="main-contato">
-        <div>
-            <img src="img/storm.jpg" alt="">
-        </div>
+    <main>
+      <div class="div-img-carro">
+        <img src="img/storm.jpg" alt="" class="img-carro" />
+      </div>
 
-        <div id="div-form">
-            <form action="">
-                <h1>Sobre Você</h1>
-                <input placeholder="NOME*" type="text" name="" id="">
-                <input placeholder="E-MAIL*" type="email" name="" id="">
-                <input placeholder="CPF*" type="text" name="" id="">
-                <input placeholder="SOBRENOME*" type="text" name="" id="">
-                <input placeholder="TELEFONE*" type="tel" name="" id="">
-                <select name="" id=""></select>
-                <button >Enviar</button>
-            </form>
-        </div>
+      <div id="div-form">
+        <form action="">
+          <h1>Sobre Você</h1>
+          <input placeholder="NOME*" type="text" name="" id="" />
+          <input placeholder="E-MAIL*" type="email" name="" id="" />
+          <input placeholder="CPF*" type="text" name="" id="" />
+          <input placeholder="SOBRENOME*" type="text" name="" id="" />
+          <input placeholder="TELEFONE*" type="tel" name="" id="" />
+          <select placeholder="sdfsd" name="" id="">
+            <option value="" disabled selected>TIPO DO CONTATO</option>
+            <option value="">Elogio</option>
+            <option value="">Reclamação</option>
+            <option value="">Solicitação</option>
+          </select>
+          <button>Enviar</button>
+        </form>
+      </div>
     </main>
-       
 
-     <footer>
-        <div id="redes-sociais">
-            <span>Redes Sociais</span>
-            <img class="redes-sociais" src="img/facebook-50.png" alt="logo-facebook">
-            <img class="redes-sociais" src="img/youtube-squared-50.png" alt="logo-youtube">
-            <img class="redes-sociais" src="img/instagram-logo-50.png" alt="logo-instagram">
-        </div>
+    <!-- Rodapé -->
+    <footer>
+      <div id="div-redes-sociais">
+        <span>Redes Sociais</span>
 
-        <span>Copyright © 2026 <a href="https://github.com/N1nh4">Alana Abreu</a> Todos os direitos reservados.</span>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/FordBrasil/?locale=pt_BR"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/facebook-50.png"
+            alt="logo-facebook"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.youtube.com/user/FordBrasil"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/youtube-squared-50.png"
+            alt="logo-youtube"
+        /></a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/fordbrasil/?hl=pt-br"
+          class="a-redes-sociais"
+          ><img
+            class="redes-sociais"
+            src="img/instagram-logo-50.png"
+            alt="logo-instagram"
+        /></a>
+      </div>
 
-        <img src="img/ford-96.png" alt="">
+      <span class="copyrigth"
+        >Copyright © 2026
+        <a href="https://github.com/N1nh4" target="_blank">Alana Abreu</a> Todos
+        os direitos reservados.</span
+      >
+
+      <div class="div-img-logo-footer">
+        <img src="img/ford-96.png" alt="" class="img-logo-footer" />
+      </div>
     </footer>
-</body>
+  </body>
 </html>

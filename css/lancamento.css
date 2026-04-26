@@ -63,30 +63,76 @@ main {
   align-items: center;
 }
 
-.div-img {
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 98vw;
+  height: 60vh;
+}
+
+#opcoes-carros {
+  display: flex;
+  gap: 5%;
+}
+
+.card-carros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-imagem-carro {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 100%;
-  overflow: hidden;
+  max-width: 95%;
 }
 
-.link {
+.imagem-carro {
   max-width: 75%;
   height: auto;
 }
 
-#ranger {
-  max-width: 100%;
-  height: auto;
+.info-carro {
+  display: flex;
+  gap: 1%;
+  justify-content: center;
+  width: 90%;
 }
 
-main > p {
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+#item1 {
+  width: 26px;
+}
+
+.textos-carro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+}
+
+.texto1 {
+  color: #1351d8;
+}
+
+.texto2 {
+  display: flex;
+  justify-content: start;
+}
+
+#lancamento {
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -125,58 +171,16 @@ footer > span > a {
   height: auto;
 }
 
-@media (max-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #1b357e;
-    color: white;
-    justify-content: space-between;
-    padding: 2%;
-    height: auto;
-  }
+button {
+  background-color: #1351d8;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px 0px;
+}
 
-  footer > span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer > span > a {
-    color: white;
-  }
-
-  #div-redes-sociais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-  }
-
-  .a-redes-sociais {
-    max-width: 5%;
-    height: auto;
-  }
-
-  .redes-sociais {
-    width: 100%;
-    height: auto;
-  }
-
-  .copyrigth {
-    display: flex;
-    justify-content: center;
-    align-itens: center;
-  }
-
-  .div-img-logo-footer {
-    display: flex;
-    justify-content: center;
-    align-itens: center;
-  }
-
-  .img-logo-footer {
-    width: 10%;
-    height: auto;
-  }
+button:hover {
+  background-color: #1b357e;
 }
